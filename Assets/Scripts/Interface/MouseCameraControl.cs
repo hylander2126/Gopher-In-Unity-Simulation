@@ -43,10 +43,10 @@ public class MouseCameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mouseX = Input.GetAxis("Mouse X");
-        mouseY = Input.GetAxis("Mouse Y");
+        mouseX = Input.GetAxis("NewHorizontal");
+        mouseY = Input.GetAxis("NewVertical");
 
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetKeyDown("joystick button 0"))
             HomeCameraJoints();
     }
 

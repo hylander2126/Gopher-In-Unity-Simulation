@@ -63,5 +63,6 @@ public class CollisionReader : MonoBehaviour
             collisionOtherNames[storageIndex] = other;
             storageIndex = (storageIndex + 1) % storageLength;
         }
+        Debug.Log(self + " collided with " + other);
     }
 }
